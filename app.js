@@ -112,7 +112,7 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(x, y, z){
-    num = x;
+    let num = x;
         if (num <y){
             num =y;
             if (num < z){
@@ -134,6 +134,7 @@ function maxOfThree(x, y, z){
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
 
 /*
 Exercise 7: calculateTip()

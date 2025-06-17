@@ -111,31 +111,25 @@ Example: maxOfThree(17, 4, 9) should return 17.
 Complete the exercise in the space below:
 */
 
+
 function maxOfThree(x, y, z){
     let num = x;
-        if (num <y){
-            num =y;
-            if (num < z){
-                num =z
-                return(z);
-            }
-            else{
-                return(y);
-            }
-        }
-        else if (num < z){
-            num =z
+    function isMoreThan(x, y){
+        return (x > y);
+    }
+    if (isMoreThan(y, num)){
+        num = y;
+        if (isMoreThan(z,num)){
             return(z);
         }
-        else{
-            return(x);
-        }
-
+        else{return(num);}
+    }
+    else if (isMoreThan(z, num)){
+        return(z)
+    }
+    else{return(num);}
 }
-
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
-
-
 /*
 Exercise 7: calculateTip()
 

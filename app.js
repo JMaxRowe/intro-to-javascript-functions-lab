@@ -112,6 +112,7 @@ Complete the exercise in the space below:
 */
 
 
+
 function maxOfThree(x, y, z){
     let num = x;
     function isMoreThan(x, y){
@@ -130,6 +131,24 @@ function maxOfThree(x, y, z){
     else{return(num);}
 }
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
+function maxOfThree(x, y, z) {
+    let num = x;
+        function isMoreThan(x, y){
+            return (x > y);
+        }
+        if (isMoreThan(y, num)){
+            num = y;
+            num = z > num ?  z : num;
+            return num
+        }
+        else if (isMoreThan(z, num)){
+            return(z)
+        }
+        else{return(num);}
+}
+
+console.log('Exercise 6.5 Result:', maxOfThree(5, 10, 18));
 /*
 Exercise 7: calculateTip()
 
